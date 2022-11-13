@@ -1,0 +1,240 @@
+:root {
+  /*colors*/
+  --blueish-gray: #666ca3;
+  --dark-blue: #13183f;
+  --grey: #aaabad;
+  --hot-pink: #f74780;
+  --pink: #ffa7c3;
+  --white: #ffffff;
+  --orange-pink: #ff6f48, #f02aa6;
+  --blue-pink: #4851ff, #f02aa6;
+  /*fonts*/
+  font-family: "Plus-Jakarta-Sans", "Sans-Serif";
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  display: grid;
+  background-image: linear-gradient(#ffffff 40%, #f0f1ff);
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body,
+html {
+  min-height: 100%;
+  height: auto;
+}
+
+header {
+  display: flex;
+  grid-column: 1 / span 3;
+}
+
+.logo-dark {
+  width: 6.875rem;
+  height: 2.1875rem;
+  margin-top: 2rem;
+}
+
+.top-button {
+  width: 8.75rem;
+  height: 3rem;
+  margin-top: 1.5rem;
+  margin-left: 114px;
+  font-weight: 700;
+  font-size: 1.125rem;
+  border-radius: 1.75rem;
+  border: none;
+  background-color: var(--dark-blue);
+  color: var(--white);
+}
+
+@media (hover: hover) {
+  header button:hover {
+    background-color: var(--blueish-gray);
+    cursor: pointer;
+  }
+}
+
+main {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-columns: 21.875rem;
+  gap: 3.5rem 0rem;
+  margin-bottom: 3.75rem;
+  place-content: center;
+  grid-column: 1 / span 3;
+}
+
+main div {
+  display: grid;
+  width: 21.4375rem;
+  height: 20.125rem;
+  background-color: var(--white);
+  border-radius: 0.625rem;
+}
+
+.animation {
+  background-image: linear-gradient(0deg, #ffffff 50%, #ffffff 100%);
+}
+
+.headline h1 {
+  margin-top: 2.375rem;
+  margin-bottom: 1.625rem;
+  padding-left: 1.25rem;
+  font-size: 2.5rem;
+  line-height: 3.125rem;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 750px) {
+  .desktop-paragraph {
+    display: none;
+  }
+}
+
+p {
+  padding-left: 1.25rem;
+  font-size: 1rem;
+  line-height: 1.625rem;
+  font-weight: 500;
+  padding-bottom: 1.5rem;
+}
+
+.headline button {
+  width: 10.4375rem;
+  height: 3.5rem;
+  margin-left: 1.25rem;
+  margin-bottom: 4.125rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+  border-radius: 1.75rem;
+  background-image: linear-gradient(var(--orange-pink));
+  color: var(--white);
+  border: none;
+}
+
+@media (hover: hover) {
+  .headline button:hover {
+    background-image: linear-gradient(pink, pink);
+    color: white;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .desktop-hero {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1100px), (max-width: 750px) {
+  .tablet-hero {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .mobile-hero {
+    display: none;
+  }
+}
+
+.call-to-action {
+  background-image: linear-gradient(var(--orange-pink));
+  color: var(--white);
+  height: 120px;
+}
+
+.call-to-action h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding-top: 1.5rem;
+  padding-left: 1.75rem;
+  line-height: 2rem;
+}
+
+@media screen and (max-width: 750px) {
+  .desktop {
+    display: none;
+  }
+}
+
+.icon {
+  position: relative;
+  top: -30%;
+}
+
+main div p,
+h3,
+img,
+a {
+  padding-left: 2rem;
+  font-weight: 800;
+}
+
+main div h3 {
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+}
+
+main div p {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+  color: var(--grey);
+}
+
+main div a {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 43.75rem;
+  color: var(--hot-pink);
+  text-decoration: none;
+}
+
+@media (hover: hover) {
+  main div a:hover {
+    color: var(--pink);
+  }
+}
+
+footer {
+  display: flex;
+  grid-column: 1 / span 3;
+  background: #13183f;
+}
+
+footer button {
+  width: 8.75rem;
+  height: 3rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+  border-radius: 1.75rem;
+  margin-left: 7.125rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-image: linear-gradient(var(--blue-pink));
+  color: var(--white);
+  cursor: pointer;
+  border: none;
+}
+
+@media (hover: hover) {
+  footer button:hover {
+    background-image: linear-gradient(pink, pink);
+    color: var(--white);
+  }
+}
+
+.logo-light {
+  width: 8rem;
+  height: 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+}
